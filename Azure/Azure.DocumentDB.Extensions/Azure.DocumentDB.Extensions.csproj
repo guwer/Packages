@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
+    <Description>Helpers and extensions for Azure DocumentDB development.</Description>
   </PropertyGroup>
 
   <ItemGroup>
