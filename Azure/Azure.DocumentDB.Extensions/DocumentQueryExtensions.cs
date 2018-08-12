@@ -19,9 +19,9 @@ namespace Azure.DocumentDB.Extensions
             return list;
         }
 
-        public static async Task<List<T>> ToListAsync<T>(this IQueryable<T> query)
+        public static Task<List<T>> ToListAsync<T>(this IQueryable<T> query)
         {
-            return await query.AsDocumentQuery().ToListAsync();
+            return query.AsDocumentQuery().ToListAsync();
         }
     }
 }
